@@ -8,7 +8,7 @@
 
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
-    id 'application'
+    application
 }
 
 repositories {
@@ -18,18 +18,18 @@ repositories {
 
 dependencies {
     // Use JUnit Jupiter for testing.
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.1'
+    testImplementation("org.junit.jupiter:junit-jupiter:5.9.1")
 
     // This dependency is used by the application.
-    implementation 'com.google.guava:guava:31.1-jre'
+    implementation("com.google.guava:guava:31.1-jre")
 }
 
 application {
     // Define the main class for the application.
-    mainClass = 'ppl.a2.apitesting.App'
+    mainClass.set("ppl.a2.apitesting.App")
 }
 
-tasks.named('test') {
+tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
