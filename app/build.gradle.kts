@@ -17,6 +17,12 @@ repositories {
 }
 
 dependencies {
+    testImplementation("io.rest-assured:rest-assured:5.4.0")
+    testImplementation("io.rest-assured:json-path:5.4.0")
+    testImplementation("io.rest-assured:xml-path:5.4.0")
+    testImplementation("io.rest-assured:json-schema-validator:5.4.0")
+    testImplementation("com.fasterxml.jackson.core:jackson-core:2.13.0")
+    testImplementation("com.fasterxml.jackson.core:jackson-databind:2.13.0")
     // Use JUnit Jupiter for testing.
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.1")
 
