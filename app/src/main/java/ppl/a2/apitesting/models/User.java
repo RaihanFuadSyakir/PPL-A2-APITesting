@@ -14,6 +14,9 @@ public class User {
     private String registerDate;
     private String updatedDate;
     private String error;
+    private String phone;
+    private String picture;
+    private Location location;
 
     public User(String id, String title, String firstName, String lastName, String gender, String email,
             String dateOfBirth, String registerDate, String updatedDate, String error, String phone, String picture,
@@ -48,10 +51,6 @@ public class User {
     public void setUpdatedDate(String updatedDate) {
         this.updatedDate = updatedDate;
     }
-
-    private String phone;
-    private String picture;
-    private Location location;
 
     public User(String id, String firstName, String lastName, String email, String registerDate, String updatedDate) {
         this.id = id;
