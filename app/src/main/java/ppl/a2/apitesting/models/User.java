@@ -13,6 +13,33 @@ public class User {
     private String dateOfBirth;
     private String registerDate;
     private String updatedDate;
+    private String error;
+
+    public User(String id, String title, String firstName, String lastName, String gender, String email,
+            String dateOfBirth, String registerDate, String updatedDate, String error, String phone, String picture,
+            Location location) {
+        this.id = id;
+        this.title = title;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.gender = gender;
+        this.email = email;
+        this.dateOfBirth = dateOfBirth;
+        this.registerDate = registerDate;
+        this.updatedDate = updatedDate;
+        this.error = error;
+        this.phone = phone;
+        this.picture = picture;
+        this.location = location;
+    }
+
+    public String getError() {
+        return error;
+    }
+
+    public void setError(String error) {
+        this.error = error;
+    }
 
     public String getUpdatedDate() {
         return updatedDate;

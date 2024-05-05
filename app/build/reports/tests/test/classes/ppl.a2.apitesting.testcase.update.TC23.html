@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - TC0</title>
+<title>Test results - TC23</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>TC0</h1>
+<h1>TC23</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/ppl.a2.apitesting.testcase.get.html">ppl.a2.apitesting.testcase.get</a> &gt; TC0</div>
+<a href="../packages/ppl.a2.apitesting.testcase.update.html">ppl.a2.apitesting.testcase.update</a> &gt; TC23</div>
 <div id="summary">
 <table>
 <tr>
@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">2</div>
+<div class="counter">1</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">2.667s</div>
+<div class="counter">0.728s</div>
 <p>duration</p>
 </div>
 </td>
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox failures" id="successRate">
-<div class="percent">50%</div>
+<div class="percent">0%</div>
 <p>successful</p>
 </div>
 </td>
@@ -70,15 +70,12 @@
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="testGetFailed()"></a>
-<h3 class="failures">testGetFailed()</h3>
+<a name="testUpdateFirstNameOutsideLimit()"></a>
+<h3 class="failures">testUpdateFirstNameOutsideLimit()</h3>
 <span class="code">
-<pre>ppl.a2.apitesting.util.CustomAssertionError: Expected status: 201, but was: 200
-firstName: Budis (expected) vs Budi (actual)
-lastName: Yantos (expected) vs Yanto (actual)
-email: budiyantos@gmail.com (expected) vs budiyanto@gmail.com (actual)
+<pre>ppl.a2.apitesting.util.CustomAssertionError: lastName: Iskandar (expected) vs asdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasdasd (actual)
 
-	at app//ppl.a2.apitesting.testcase.get.TC0.setUp(TC0.java:26)
+	at app//ppl.a2.apitesting.testcase.update.TC23.setUp(TC23.java:27)
 	at java.base@21.0.2/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base@21.0.2/java.lang.reflect.Method.invoke(Method.java:580)
 	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)
@@ -178,14 +175,9 @@ email: budiyantos@gmail.com (expected) vs budiyanto@gmail.com (actual)
 </tr>
 </thead>
 <tr>
-<td class="failures">testGetFailed()</td>
-<td class="failures">0.351s</td>
+<td class="failures">testUpdateFirstNameOutsideLimit()</td>
+<td class="failures">0.728s</td>
 <td class="failures">failed</td>
-</tr>
-<tr>
-<td class="success">testGetSuccess()</td>
-<td class="success">2.316s</td>
-<td class="success">passed</td>
 </tr>
 </table>
 </div>
